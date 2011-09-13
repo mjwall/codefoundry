@@ -11,3 +11,5 @@ doc/plugins
 .bundle
 notes.txt
 TODO*
+**/*.swp
+*.swp

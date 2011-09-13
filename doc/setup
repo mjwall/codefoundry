@@ -1,0 +1,25 @@
+How to get Codefoundry app running
+
+1. 	Check out the code
+
+2. 	Make a config/database.yml
+	  SQLite is fine
+		Make a dummy rails app somewhere else, copy the database.yml generated in
+		the dummy app to codefoundry's config
+
+3.	In config/settings.yml
+		Add the following:
+		development:
+			...
+			...
+			marker:
+				link_base: /
+			repository_base_path: /absolute/path/to/a/sample/git/folder
+
+4.  bundle install
+5. 	rake db:create
+6.	rake db:migrate
+7.	rails s
+
+App should be able to run with the above steps.
+
